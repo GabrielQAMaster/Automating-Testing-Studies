@@ -1,0 +1,36 @@
+{
+  "test": "GET /booking returns a list of bookings",
+  "status": 200,
+  "expectedStatus": 200,
+  "result": "Passed",
+  "dataFormat": "Valid Array"
+}
+
+{
+  "test": "GET /booking/:id returns booking details",
+  "status": 200,
+  "expectedStatus": 200,
+  "result": "Passed",
+  "dataFormat": "Valid Format"
+}
+
+{
+  "test": "POST /booking creates a booking",
+  "status": 200,
+  "expectedStatus": 200,
+  "result": "Passed",
+  "dataFormat": "Valid Format"
+}
+
+{
+  "test": "Schema Validation for GET /booking/:id",
+  "result": "Passed",
+  "actualSchema": {
+    "firstname": "string",
+    "lastname": "string",
+    "totalprice": "number",
+    "depositpaid": "boolean",
+    "bookingdates": "object",
+    "additionalneeds": "string"
+  }
+}
